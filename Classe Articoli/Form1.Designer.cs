@@ -63,6 +63,7 @@
             this.checkbox.TabIndex = 0;
             this.checkbox.Text = "Alimento";
             this.checkbox.UseVisualStyleBackColor = true;
+            this.checkbox.CheckedChanged += new System.EventHandler(this.checkbox_CheckedChanged);
             // 
             // aggiungi
             // 
@@ -134,7 +135,7 @@
             // 
             this.prezzo.Location = new System.Drawing.Point(192, 72);
             this.prezzo.Name = "prezzo";
-            this.prezzo.Size = new System.Drawing.Size(170, 20);
+            this.prezzo.Size = new System.Drawing.Size(173, 20);
             this.prezzo.TabIndex = 9;
             // 
             // checkbox2
@@ -146,6 +147,7 @@
             this.checkbox2.TabIndex = 10;
             this.checkbox2.Text = "Non Alimento";
             this.checkbox2.UseVisualStyleBackColor = true;
+            this.checkbox2.CheckedChanged += new System.EventHandler(this.checkbox2_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -174,6 +176,7 @@
             this.label6.Size = new System.Drawing.Size(81, 13);
             this.label6.TabIndex = 14;
             this.label6.Text = "Data Scadenza";
+            this.label6.Visible = false;
             // 
             // dateTimePicker1
             // 
@@ -181,6 +184,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(170, 20);
             this.dateTimePicker1.TabIndex = 16;
+            this.dateTimePicker1.Visible = false;
             // 
             // label7
             // 
@@ -190,6 +194,7 @@
             this.label7.Size = new System.Drawing.Size(55, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "È Fresco?";
+            this.label7.Visible = false;
             // 
             // checkBox3
             // 
@@ -200,57 +205,65 @@
             this.checkBox3.TabIndex = 18;
             this.checkBox3.Text = "Si";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.Visible = false;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(250, 108);
+            this.label8.Location = new System.Drawing.Point(248, 108);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 13);
             this.label8.TabIndex = 19;
             this.label8.Text = "Entro Quando (max 5):";
+            this.label8.Visible = false;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(251, 127);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(111, 20);
+            this.textBox1.Size = new System.Drawing.Size(114, 20);
             this.textBox1.TabIndex = 20;
+            this.textBox1.Visible = false;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 156);
+            this.label9.Location = new System.Drawing.Point(8, 108);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(102, 13);
             this.label9.TabIndex = 21;
             this.label9.Text = "Materiale Principale:";
+            this.label9.Visible = false;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(11, 172);
+            this.textBox2.Location = new System.Drawing.Point(11, 124);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(170, 20);
             this.textBox2.TabIndex = 22;
+            this.textBox2.Visible = false;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(189, 156);
+            this.label10.Location = new System.Drawing.Point(189, 108);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(71, 13);
             this.label10.TabIndex = 23;
             this.label10.Text = "È Riciclabile?";
+            this.label10.Visible = false;
             // 
             // checkBox4
             // 
             this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(192, 175);
+            this.checkBox4.Location = new System.Drawing.Point(192, 129);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(35, 17);
             this.checkBox4.TabIndex = 24;
             this.checkBox4.Text = "Si";
             this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.Visible = false;
             // 
             // label11
             // 
