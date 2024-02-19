@@ -140,11 +140,11 @@
             // checkbox2
             // 
             this.checkbox2.AutoSize = true;
-            this.checkbox2.Location = new System.Drawing.Point(445, 26);
+            this.checkbox2.Location = new System.Drawing.Point(452, 26);
             this.checkbox2.Name = "checkbox2";
-            this.checkbox2.Size = new System.Drawing.Size(69, 17);
+            this.checkbox2.Size = new System.Drawing.Size(89, 17);
             this.checkbox2.TabIndex = 10;
-            this.checkbox2.Text = "Materiale";
+            this.checkbox2.Text = "Non Alimento";
             this.checkbox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -257,9 +257,9 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(370, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 13);
+            this.label11.Size = new System.Drawing.Size(39, 13);
             this.label11.TabIndex = 25;
-            this.label11.Text = "Cos\'è?:";
+            this.label11.Text = "Cos\'è?";
             // 
             // Form1
             // 
