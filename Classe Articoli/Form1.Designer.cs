@@ -73,6 +73,7 @@
             this.aggiungi.TabIndex = 1;
             this.aggiungi.Text = "Aggiungi";
             this.aggiungi.UseVisualStyleBackColor = true;
+            this.aggiungi.Click += new System.EventHandler(this.aggiungi_Click);
             // 
             // nome
             // 
@@ -278,7 +279,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 370);
+            this.ClientSize = new System.Drawing.Size(547, 156);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.label10);
