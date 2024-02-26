@@ -37,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.descrizione = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.prezzo = new System.Windows.Forms.TextBox();
+            this.costo = new System.Windows.Forms.TextBox();
             this.checkbox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,6 +52,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkbox
@@ -69,7 +70,7 @@
             // 
             this.aggiungi.Location = new System.Drawing.Point(371, 108);
             this.aggiungi.Name = "aggiungi";
-            this.aggiungi.Size = new System.Drawing.Size(170, 41);
+            this.aggiungi.Size = new System.Drawing.Size(85, 41);
             this.aggiungi.TabIndex = 1;
             this.aggiungi.Text = "Aggiungi";
             this.aggiungi.UseVisualStyleBackColor = true;
@@ -132,12 +133,12 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Prezzo Articolo:";
             // 
-            // prezzo
+            // costo
             // 
-            this.prezzo.Location = new System.Drawing.Point(192, 72);
-            this.prezzo.Name = "prezzo";
-            this.prezzo.Size = new System.Drawing.Size(173, 20);
-            this.prezzo.TabIndex = 9;
+            this.costo.Location = new System.Drawing.Point(192, 72);
+            this.costo.Name = "costo";
+            this.costo.Size = new System.Drawing.Size(173, 20);
+            this.costo.TabIndex = 9;
             // 
             // checkbox2
             // 
@@ -275,11 +276,22 @@
             this.label11.TabIndex = 25;
             this.label11.Text = "Cos\'è?";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(456, 108);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 41);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "Paga";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 156);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.label10);
@@ -294,7 +306,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.checkbox2);
-            this.Controls.Add(this.prezzo);
+            this.Controls.Add(this.costo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.descrizione);
             this.Controls.Add(this.label3);
@@ -323,7 +335,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox descrizione;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox prezzo;
+        private System.Windows.Forms.TextBox costo;
         private System.Windows.Forms.CheckBox checkbox2;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label5;
@@ -338,6 +350,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button1;
     }
 }
 
