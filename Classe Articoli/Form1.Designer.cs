@@ -42,7 +42,6 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -53,6 +52,9 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.scontrino = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // checkbox
@@ -180,14 +182,6 @@
             this.label6.Text = "Data Scadenza";
             this.label6.Visible = false;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(11, 124);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(170, 20);
-            this.dateTimePicker1.TabIndex = 16;
-            this.dateTimePicker1.Visible = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -286,11 +280,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(11, 124);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(170, 20);
+            this.textBox3.TabIndex = 27;
+            this.textBox3.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(456, 307);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 23);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "Finito";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // scontrino
+            // 
+            this.scontrino.FormattingEnabled = true;
+            this.scontrino.Location = new System.Drawing.Point(11, 154);
+            this.scontrino.Name = "scontrino";
+            this.scontrino.Size = new System.Drawing.Size(530, 147);
+            this.scontrino.TabIndex = 31;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(547, 156);
+            this.ClientSize = new System.Drawing.Size(547, 336);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.checkBox4);
@@ -301,7 +323,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.checkBox1);
@@ -316,6 +337,7 @@
             this.Controls.Add(this.nome);
             this.Controls.Add(this.aggiungi);
             this.Controls.Add(this.checkbox);
+            this.Controls.Add(this.scontrino);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -340,7 +362,6 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label label8;
@@ -351,6 +372,9 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox scontrino;
     }
 }
 
