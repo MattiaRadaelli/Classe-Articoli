@@ -54,7 +54,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.scontrino = new System.Windows.Forms.ListBox();
+            this.scontrino = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // checkbox
@@ -290,7 +290,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(456, 307);
+            this.button2.Location = new System.Drawing.Point(456, 308);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 23);
             this.button2.TabIndex = 29;
@@ -300,17 +300,18 @@
             // 
             // scontrino
             // 
-            this.scontrino.FormattingEnabled = true;
-            this.scontrino.Location = new System.Drawing.Point(11, 154);
+            this.scontrino.Location = new System.Drawing.Point(11, 155);
+            this.scontrino.Multiline = true;
             this.scontrino.Name = "scontrino";
-            this.scontrino.Size = new System.Drawing.Size(530, 147);
-            this.scontrino.TabIndex = 31;
+            this.scontrino.Size = new System.Drawing.Size(529, 147);
+            this.scontrino.TabIndex = 32;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(547, 336);
+            this.Controls.Add(this.scontrino);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button1);
@@ -337,7 +338,6 @@
             this.Controls.Add(this.nome);
             this.Controls.Add(this.aggiungi);
             this.Controls.Add(this.checkbox);
-            this.Controls.Add(this.scontrino);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -374,7 +374,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ListBox scontrino;
+        private System.Windows.Forms.TextBox scontrino;
     }
 }
 
